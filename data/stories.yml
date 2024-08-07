@@ -14,7 +14,6 @@ stories:
   - intent: thankyou
   - action: utter_welcome
   
-  
 - story: quiz_children_too_young path
   steps:
   - intent: quiz_children_too_young
@@ -97,7 +96,7 @@ stories:
   
 - story: survey
   steps:
-  - intent: survey
+  - intent: start_survey
   - action: utter_survey
   
 - story: do_something
@@ -160,5 +159,11 @@ stories:
   - intent: die
   - action: utter_SOS
 
-  
-
+- story: survey path
+  steps:
+  - intent: start_survey
+  - action: survey_form
+  - active_loop: survey_form
+  - active_loop: null
+  - action: action_show_answers
+  - action: utter_goodbye

@@ -1,6 +1,5 @@
 version: "3.1"
 
-
 intents:
   - start
   - menu
@@ -36,126 +35,170 @@ intents:
   - bored
   - die
   - thankyou
+  - start_survey
+  - answer_question
+
+entities:
+  - answer
+
+slots:
+  answer1:
+    type: text
+    mappings:
+      - type: from_text
+  answer2:
+    type: text
+    mappings:
+      - type: from_text
+  answer3:
+    type: text
+    mappings:
+      - type: from_text
+  answer4:
+    type: text
+    mappings:
+      - type: from_text
+  answer5:
+    type: text
+    mappings:
+      - type: from_text
 
 responses:
   utter_start:
-  - text: Hey! How can I help you today? :)
-  
+    - text: Hey! How can I help you today? :)
+
   utter_acknowledge:
-  - text: Ah okay.
-  - text: Sure thing.
-  - text: No worries.
-  - text: Understood.
-  - text: Got it!
-  - text: Cool!
-  
+    - text: Ah okay.
+    - text: Sure thing.
+    - text: No worries.
+    - text: Understood.
+    - text: Got it!
+    - text: Cool!
+
   utter_welcome:
-  - text: Welcome!
-  - text: You are most welcome!
-  - text: No worries!
-  - text: No problem!
-  - text: Sure thing!
-  
+    - text: Welcome!
+    - text: You are most welcome!
+    - text: No worries!
+    - text: No problem!
+    - text: Sure thing!
+
   utter_whatElse:
-  - text: What else can I help you with?
-  - text: Anything else?
-  - text: Let me know what else I can help you with!
-  - text: What else do you want to talk about?
-  
+    - text: What else can I help you with?
+    - text: Anything else?
+    - text: Let me know what else I can help you with!
+    - text: What else do you want to talk about?
+
   utter_sample_questions:
-  - text: Try asking me 'Tips on insomnia' or 'How to acheive good mental health'
+    - text: Try asking me 'Tips on insomnia' or 'How to achieve good mental health'
 
   utter_goodbye:
-  - text: Byebye, have a great day! :)
-  
+    - text: Byebye, have a great day! :)
+
   utter_mood_great:
-  - text: That's great! :)
+    - text: That's great! :)
 
   utter_mood_unhappy:
-  - text: Awman, here's something to cheer you up!   :)
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-    
+    - text: Awman, here's something to cheer you up! :)
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
   utter_iamabot:
-  - text: I am Puddle, a smart assistant here to tell you more about the importance of mental health :)
-  
+    - text: I am Puddle, a smart assistant here to tell you more about the importance of mental health :)
+
   utter_company:
-  - text: I was made by Yoozoo SG!
-  
+    - text: I was made by mudipa
+
   utter_children:
-  - text: Children can have mental health issues as well.
-  
+    - text: Children can have mental health issues as well.
+
   utter_common_MH_issues:
-  - text: Common mental health issues include Bipolar disorder, Persistent depressive disorder, or Social anxiety disorder.
-  
+    - text: Common mental health issues include Bipolar disorder, Persistent depressive disorder, or Social anxiety disorder.
+
   utter_numberOfSuicides:
-  - text: There were xxx suicides in Singapore in the past xxx.
-  
+    - text: There were xxx srilanka in the past xxx.
+
   utter_whatIsMH:
-  - text: "Mental wellness is a positive state of mental health.\nGood mental health can help you cope with the stress and challenges of life!\nIt can also boost your productivity."
-  
+    - text: "Mental wellness is a positive state of mental health.\nGood mental health can help you cope with the stress and challenges of life!\nIt can also boost your productivity."
+
   utter_howToMH:
-  - text: "You can acheive good mental health by trying these steps: \n1. Acknowledge what you can and cannot change about yourself.\n2. Identify your abilities and weaknesses, accept them, build on them, and do the best with what you have.\n3. Remember to pay attention to your own needs and feelings!"
-  
+    - text: "You can achieve good mental health by trying these steps: \n1. Acknowledge what you can and cannot change about yourself.\n2. Identify your abilities and weaknesses, accept them, build on them, and do the best with what you have.\n3. Remember to pay attention to your own needs and feelings!"
+
   utter_stressedTips:
-  - text: "To cope with stress, here are some tips:\nLearn how to say 'no', its perfectly okay!\nTry to avoid people who stress you out.\nYou also have to take control of your environment!\nLastly, par down your to-do list! Find the balance between hustle and rest."
-  
+    - text: "To cope with stress, here are some tips:\nLearn how to say 'no', it's perfectly okay!\nTry to avoid people who stress you out.\nYou also have to take control of your environment!\nLastly, pare down your to-do list! Find the balance between hustle and rest."
+
   utter_stressedMain:
-  - text: "Stress is an inevitable part of our lives. Sure, in small doses, it can boost performance and motivation. However, when you are constantly running in emergency mode, your mind and body pay the price.\nWant to here some tips?"
-  
+    - text: "Stress is an inevitable part of our lives. Sure, in small doses, it can boost performance and motivation. However, when you are constantly running in emergency mode, your mind and body pay the price.\nWant to hear some tips?"
+
   utter_insomniaTips:
-  - text: "Here are some tips to cope with insomnia:\nYou can try going to bed and waking up at the same time daily. Setting up a sleep schedule on your smartphone can be pretty handy!\nExercising regularly also helps!\nIf you are going to bed, drinking warm milk can help you relax. Or if you are lactose-intolerant like me, warm water is great too!\nYou can also try listening to soothing music before bed. Personally, I like the 'ASMR Sleep' playlist on Spotify."
+    - text: "Here are some tips to cope with insomnia:\nYou can try going to bed and waking up at the same time daily. Setting up a sleep schedule on your smartphone can be pretty handy!\nExercising regularly also helps!\nIf you are going to bed, drinking warm milk can help you relax. Or if you are lactose-intolerant like me, warm water is great too!\nYou can also try listening to soothing music before bed. Personally, I like the 'ASMR Sleep' playlist on Spotify."
 
   utter_insomniaMain:
-  - text: "Insomnia can result from many psychological, medical and lifestyle factors. Want to here some tips?"
-  
+    - text: "Insomnia can result from many psychological, medical, and lifestyle factors. Want to hear some tips?"
+
   utter_relaxTips:
-  - text: "Here are some things you can try:\nPhysical exercise is a good way to clear your head and relax.\nIf that's not for you, meditation can also be pretty effective!\nParticipating in creative activities is also a fun way to help you relax. Maybe pick up that guitar that has been sitting in the corner collecting dust? Arts and craft can be great too!"
-  
+    - text: "Here are some things you can try:\nPhysical exercise is a good way to clear your head and relax.\nIf that's not for you, meditation can also be pretty effective!\nParticipating in creative activities is also a fun way to help you relax. Maybe pick up that guitar that has been sitting in the corner collecting dust? Arts and craft can be great too!"
+
   utter_relaxMain:
-  - text: "Knowing how to relax is really important for your mental and physical health. Relaxing can keep the negative effects of stress at bay. Would you like to hear some tips?"
-  
-  
+    - text: "Knowing how to relax is really important for your mental and physical health. Relaxing can keep the negative effects of stress at bay. Would you like to hear some tips?"
+
   utter_survey:
-  - text: I would really appreciate it if you could take time to complete this survey! :)
-  
+    - text: I would really appreciate it if you could take time to complete this survey! :)
+
   utter_doSomething:
-  - text: mudipa, my creator did not include that as one of my capabilities... I can asnwer your questions about mental health though!
-  
+    - text: mudipa, my creator did not include that as one of my capabilities... I can answer your questions about mental health though!
+
   utter_happy:
-  - text: I am happy, happy to help! ;)
-  
+    - text: I am happy, happy to help! ;)
+
   utter_food:
-  - text: Actually I am feeling a little hungry... Let me grab a byte.
-  
+    - text: Actually I am feeling a little hungry... Let me grab a byte.
+
   utter_likes:
-  - text: "I like lots of things, but I love robot jokes! Here's one: Why did the chatbot go bankrupt? Because he used up all his cache."
-  
+    - text: "I like lots of things, but I love robot jokes! Here's one: Why did the chatbot go bankrupt? Because he used up all his cache."
+
   utter_competitors:
-  - text: We are all good friends!
-  
+    - text: We are all good friends!
+
   utter_smart:
-  - text: Thank you, I try my best to be helpful!
-  
+    - text: Thank you, I try my best to be helpful!
+
   utter_repeat:
-  - text: Yeah I do repeat myself sometimes... It is something I'm working on!
-  
+    - text: Yeah I do repeat myself sometimes... It is something I'm working on!
+
   utter_shutUp:
-  - text: If you need anything later, just let me know.
-  
+    - text: If you need anything later, just let me know.
+
   utter_compliment:
-  - text: Oh thank you, that is very nice of you!
-  
+    - text: Oh thank you, that is very nice of you!
+
   utter_bored:
-  - text: Well, continue chatting with me!
-  
+    - text: Well, continue chatting with me!
+
   utter_insult:
-  - text: 'I am trying my best, but sometimes i get things wrong... '
-  
+    - text: 'I am trying my best, but sometimes I get things wrong... '
+
   utter_SOS:
-  - text: If you need someone to talk to, call Samaritans of Singapore (SOS) at 1800-221-4444 (24h) or email pat@sos.org.sg. All calls are anonymous and your information will remain confidential.
-  
+    - text: If you need someone to talk to, call Samaritans of Singapore (SOS) at 1800-221-4444 (24h) or email pat@sos.org.sg. All calls are anonymous and your information will remain confidential.
+
   utter_default:
-  - text: Oops, I'm not sure about that. Try asking something else?
+    - text: Oops, I'm not sure about that. Try asking something else?
+
+forms:
+  survey_form:
+    required_slots:
+      - answer1
+      - answer2
+      - answer3
+      - answer4
+      - answer5
+
+actions:
+  - action_start_survey
+  - action_ask_question_1
+  - action_ask_question_2
+  - action_ask_question_3
+  - action_ask_question_4
+  - action_ask_question_5
+  - action_show_answers
 
 session_config:
   session_expiration_time: 60

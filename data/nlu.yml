@@ -2,6 +2,8 @@ version: "3.1"
 ## create intents (user input) and give examples here
 
 nlu:
+
+      
 - intent: start
   examples: |
     - hello
@@ -121,6 +123,12 @@ nlu:
     - Show me the options
     - i need advise
     - i need advice
+
+- intent: start_survey
+  examples: |
+    - I want to take a survey
+    - Start the survey
+    - Begin the survey
 
 - intent: sample_questions
   examples: |
@@ -1649,47 +1657,7 @@ nlu:
     - relaxation tips lor alamak
     - relek tips lor alamak
     
-- intent: survey
-  examples: |
-    - survey
-    - show me the survey
-    - customer survey
-    - feedback
-    - survey la
-    - survey la
-    - show me the survey la
-    - customer survey la
-    - feedback la
-    - survey lah
-    - survey lah
-    - show me the survey lah
-    - customer survey lah
-    - feedback lah
-    - survey lor
-    - survey lor
-    - show me the survey lor
-    - customer survey lor
-    - feedback lor
-    - survey alamak
-    - survey alamak
-    - show me the survey alamak
-    - customer survey alamak
-    - feedback alamak
-    - survey la alamak
-    - survey la alamak
-    - show me the survey la alamak
-    - customer survey la alamak
-    - feedback la alamak
-    - survey lah alamak
-    - survey lah alamak
-    - show me the survey lah alamak
-    - customer survey lah alamak
-    - feedback lah alamak
-    - survey lor alamak
-    - survey lor alamak
-    - show me the survey lor alamak
-    - customer survey lor alamak
-    - feedback lor alamak
+
 
 - intent: do_something
   examples: |
