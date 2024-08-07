@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-score",
+      "2": "I-score",
+      "3": "L-score",
+      "4": "U-score",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-score": 1,
+      "I-score": 2,
+      "L-score": 3,
+      "U-score": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]
